@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questao1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_titulo_q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Por Quanto Tempo Voce pretende deixar seu dinheiro investido?" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_q1_itema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menos de 6 meses" />
+
+            <RadioButton
+                android:id="@+id/rb_q1_itemb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entre 6 meses e 1 ano" />
+            <RadioButton
+                android:id="@+id/rb_q1_itemc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entre 1 ano e 3 anos" />
+            <RadioButton
+                android:id="@+id/rb_q1_itemd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acima de 3 anos" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_confirmaResposta_q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Confirmar" />
+    </LinearLayout>
+</FrameLayout>

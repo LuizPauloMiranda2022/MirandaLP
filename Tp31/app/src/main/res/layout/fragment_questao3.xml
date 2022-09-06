@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questao1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_titulo_q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Qual das alternativas melhor classifica sua formacao e experiencia com o mercado financeiro" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_q3_itema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nao possuo formacao academica ou conhecimento do mercado financeiro" />
+
+            <RadioButton
+                android:id="@+id/rb_q3_itemb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Possuo formacao academica na area financeira, mas nao tenho experiencia com o mercado financeiro" />
+            <RadioButton
+                android:id="@+id/rb_q3_itemc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Possuo formacao academica em outra area, mas possuo conhecimento do mercado financeiro" />
+
+            <RadioButton
+                android:id="@+id/rb_q3_itemd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Possuo formacao academica na area financeira ou pleno conhecimento do mercado financeiro" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_confirmaResposta_q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Confirmar" />
+    </LinearLayout>
+</FrameLayout>

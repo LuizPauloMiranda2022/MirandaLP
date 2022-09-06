@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questao1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_titulo_q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Qual Objetivo desse investimento?" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_q2_itema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preservacao do capital para nao conter perder valor ao longo do tempo,assumindo baixos riscos de perdas" />
+
+            <RadioButton
+                android:id="@+id/rb_q2_itemb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aumento gradual do capital ao longo do tempo, assumindo riscos moderados" />
+            <RadioButton
+                android:id="@+id/rb_q2_itemc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aumento do capital acima da taxa de retorno media do mercado,mesmo que isso implique assumir riscos de perdas elevadas" />
+
+            <RadioButton
+                android:id="@+id/rb_q2_itemd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Obter no curto prazo retornos elevados e significativamente acima da taxa de retorno media do mercado, assumindo riscos elevados" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_confirmaResposta_q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Confirmar" />
+    </LinearLayout>
+</FrameLayout>

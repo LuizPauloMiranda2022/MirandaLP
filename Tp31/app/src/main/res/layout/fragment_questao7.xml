@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questao1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_titulo_q7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Em relacao as aplicacoes e rendimentos, em qual dessas situacoes voce se enquadra?" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_q7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_q7_itema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conto com o rendimento dessas aplicacoes para complementar minha renda mensal" />
+
+            <RadioButton
+                android:id="@+id/rb_q7_itemb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eventualmente posso resgatar parte das aplicacoes para fazer frente aos meus gastos. Contudo, nao tenho intencao de resgatar no curto prazo e pretendo fazer aplicacoes regulares" />
+            <RadioButton
+                android:id="@+id/rb_q7_itemc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nao tenho intencao de resgatar no curto prazo, mas nao pretendo realizar novas aplicacoes" />
+            <RadioButton
+                android:id="@+id/rb_q7_itemd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nao tenho intencao de resgatar no curto prazo e ainda pretendo fazer aplicacoes regulares" />
+
+
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_confirmaResposta_q7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Confirmar" />
+    </LinearLayout>
+</FrameLayout>
